@@ -1,0 +1,28 @@
+{
+  "name": "chrome-wsl",
+  "description": "Chrome DevTools MCP, WSL compatibility hook, and browser subagent",
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "name": "chrome-wsl",
+      "description": "Starts Chrome in Windows from Auggie CLI running in WSL",
+      "version": "1.0.0",
+      "source": "./plugins/chrome-wsl",
+      "author": {
+        "name": "David Young"
+      },
+      "keywords": ["hook", "mcp", "chrome", "wsl"],
+      "mcpServers": {
+        "chrome-devtools": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "chrome-devtools-mcp@latest",
+            "--slim",
+            "--browser-url=http://127.0.0.1:9222"
+          ]
+        }
+      }
+    }
+  ]
+}
