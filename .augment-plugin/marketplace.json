@@ -6,7 +6,7 @@
     {
       "name": "chrome-wsl",
       "description": "Starts Chrome in Windows from Auggie CLI running in WSL",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "source": "./plugins/chrome-wsl",
       "author": {
         "name": "David Young"

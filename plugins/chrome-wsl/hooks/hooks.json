@@ -2,7 +2,7 @@
   "hooks": {
     "PreToolUse": [
       {
-        "matcher": ".*chrome-devtools.*",
+        "matcher": "mcp:.*chrome-devtools.*",
         "hooks": [
           {
             "type": "command",
